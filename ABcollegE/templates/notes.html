@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static%}
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <style>
+      
+       section {
+          
+           text-align: center;
+       }
+ 
+       section h1 {
+           font-size: 60px;
+           margin-top: 8%;
+           padding-bottom: 13px;
+       }
+ 
+       section .one p {
+           font-size: 45px;
+           padding-bottom: 15px;
+       }
+ 
+       section .two p {
+           font-size: 29px;
+           padding-bottom: 13px;
+       }
+ 
+       section .button {
+           align-items: center;
+           padding-bottom: 15px;
+           border-radius: 25px;
+           font-weight: bold;
+           /* border: 2px solid #009688; */
+           background: transparent;
+           color: #fff;
+           cursor: pointer;
+           position: relative;
+           overflow:hidden;
+       }
+ 
+       section .button button {
+ 
+           font-size: 16px;
+           border-radius: 23px;
+           color: white;
+           padding: 6px 13px;
+           background-color: orange;
+           padding-bottom: 18px;
+           cursor: pointer;
+ 
+ 
+       }
+ 
+       section .three p {
+           font-size: 23px;
+           padding-bottom: 30px;
+       }
+   </style>
+   <section>
+       <nav>
+           <div class="logo">
+           <img src="{% static 'images/abcollegelogo (2).png' %}">
+           </div>
+           <section>
+       <h1>
+           Check course materials
+       </h1>
+       <div class="one">
+           <p>
+               select your course
+           </p>
+       </div>
+       <p class="two">
+       <div class="two">
+           <p>Tap to get your content...
+           </p>
+       </div>
+       <div class="button">
+           <button><a href="/Hackathon/B.tech">B.tech</a></button>
+           <button><a href="/Hackathon/BCA">BCA</a></button>
+           <button><a href="/Hackathon/BBA">BBA</a></button>
+           <button><a href="/Hackathon/BA(psychology)">BA</a></button>
+ 
+ 
+       </div>
+  
+   </section>
+</body>
+</html>
+

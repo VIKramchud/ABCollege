@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Signin Form Template Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+<style>
+body, html {
+  height:100%;
+	background: #1c1e21;
+  	overflow-x: hidden;
+	font-family: 'Dosis', sans-serif;
+}
+
+btn {
+	border-radius: 0
+
+  
+}
+.btn:focus, .btn:active, .btn.active, .btn:active:focus {
+	outline: 0;
+  border-radius: 0
+}
+
+
+
+.btn-larger {
+	padding: 15px 40px !important;
+	border:2px solid #F7CA18 !important;;
+	border-radius: 0px !important;;
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #F7CA18;
+	background-color: transparent;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	transition: all .6s;
+  
+
+}
+.btn-larger:hover, .btn-larger:focus, .btn-larger:active, .btn-larger.active, .open .dropdown-toggle.btn-larger {
+	border-color: #F7CA18;
+	color: #fff;
+	background-color: #F7CA18;
+  border-radius: 0
+}
+.btn-larger:active, .btn-larger.active, .open .dropdown-toggle.btn-larger {
+	background-image: none;
+}
+.btn-larger.disabled, .btn-larger[disabled], fieldset[disabled] .btn-larger, .btn-larger.disabled:hover, .btn-larger[disabled]:hover, fieldset[disabled] .btn-larger:hover, .btn-larger.disabled:focus, .btn-larger[disabled]:focus, fieldset[disabled] .btn-larger:focus, .btn-larger.disabled:active, .btn-larger[disabled]:active, fieldset[disabled] .btn-larger:active, .btn-larger.disabled.active, .btn-larger[disabled].active, fieldset[disabled] .btn-larger.active {
+	border-color: #AEA8D3;
+	background-color: #AEA8D3;
+}
+.btn-larger .badge {
+	color: #AEA8D3;
+	background-color: #fff;
+}
+
+div#form {
+	color: #fff;
+	background-attachment: scroll;
+	background: #1c1e21 url(https://static.pexels.com/photos/8819/warsaw.jpg);
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+  min-height:100%;
+
+}
+
+#userform p {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+#userform ul {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0px;
+}
+#userform {
+	background: rgba(0,0,0,0.8);
+	margin: 20px 0 20px 0
+}
+ @media (min-width: 768px) {
+#userform {
+	background: rgba(0,0,0,0.8);
+	margin: 50px 0 20px 0
+}
+}
+#userform .nav-tabs.nav-justified > li > a {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #F7CA18;
+	background-color: rgba(90,90,90,0.5);
+}
+#userform .nav-tabs.nav-justified > .active > a, #userform .nav-tabs.nav-justified > .active > a:hover, #userform .nav-tabs.nav-justified > .active > a:focus {
+	border: 0;
+	background: #F7CA18;
+	color: white;
+	border-radius: 0;
+}
+#userform .nav-justified > li > a {
+	margin-bottom: 0;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	transition: all .6s;
+}
+#userform .nav-justified > li > a:hover {
+	background: #AEA8D3;
+	color: #FFF;
+}
+#userform .nav-tabs > li > a {
+	border: 0px solid transparent;
+	border-radius: 0
+}
+#userform .nav-tabs.nav-justified > li > a:hover {
+	background: #F7CA18;
+	color: #FFF;
+	border-radius: 0;
+	border: 0;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	transition: all .6s;
+}
+#userform .nav-tabs > li.active > a, #userform .nav-tabs > li.active > a:hover, #userform .nav-tabs > li.active > a:focus {
+	color: #F7CA18;
+	cursor: default;
+	background-color: transparent;
+	border: 0;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	transition: all .6s;
+}
+ @media (min-width: 768px) {
+#userform .nav-tabs.nav-justified > li > a {
+	border: 0;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	transition: all .6s;
+}
+#userform .nav-tabs.nav-justified > li > a:hover {
+	background-color: #F7CA18;
+	border-color: transparent;
+	border: 0;
+	-webkit-transition: all .6s;
+	-moz-transition: all .6s;
+	transition: all .6s;
+}
+}
+ @media (max-width: 768px) {
+.nav-justified > li {
+	display: table-cell !important;
+	width: 1% !important;
+}
+}
+#userform .nav-tabs {
+	border-bottom: 0px solid #ddd;
+}
+#userform .tab-pane h2 {
+	margin: 10px 0;
+	color: #FFF;
+}
+#userform .tab-pane p.lead {
+	margin-top: 20px;
+}
+#userform .tab-content {
+	padding: 20px
+}
+#userform .form-group {
+	margin-bottom: 0px;
+	color: #FFF;
+}
+#userform .form-group input, #userform .form-group textarea {
+	padding: 10px;
+}
+#userform .form-group input.form-control {
+	height: auto;
+	background-color: rgba(237, 235, 250, 0.1);
+	color: #FFF;
+}
+#userform .form-control {
+	border-radius: 0;
+	border: 1px solid #fff;
+}
+#userform .form-control:focus {
+	border-color: #F7CA18;
+	box-shadow: none;
+}
+ #userform::-webkit-input-placeholder {
+ text-transform: uppercase;
+font-family: 'Dosis', sans-serif;
+font-weight: 700;
+ color: #bbb;
+}
+#userform #signup .form-group label {
+	position: relative;
+	-webkit-transform: translateY(35px);
+	-ms-transform: translateY(35px);
+	transform: translateY(35px);
+	left: 10px;
+	top: 0px;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: none;
+	font-size: 12px;
+	font-weight: 300
+}
+#userform #signup .form-group label .req {
+	margin: 2px;
+	color: #F7CA18;
+}
+#userform #signup .form-group label.active {
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	left: 2px;
+	font-size: 12px;
+}
+#userform #signup .form-group label.active .req {
+	opacity: 0;
+}
+#userform label.highlight {
+	color: #ffffff;
+}
+#userform #login .form-group label {
+	position: relative;
+	-webkit-transform: translateY(35px);
+	-ms-transform: translateY(35px);
+	transform: translateY(35px);
+	left: 10px;
+	top: 0px;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: none;
+	font-size: 12px;
+	font-weight: 300
+}
+#userform #login .form-group label .req {
+	margin: 2px;
+	color: #F7CA18;
+}
+#userform #login .form-group label.active {
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	left: 2px;
+	font-size: 12px;
+}
+#userform #login .form-group label.active .req {
+	opacity: 0;
+}
+
+.mrgn-30-top {
+	margin-top: 30px
+}
+</style>
+
+
+
+
+<script>
+$('#form').find('input, textarea').on('keyup blur focus', function (e) {
+  
+  var $this = $(this),
+      label = $this.prev('label');
+
+	  if (e.type === 'keyup') {
+			if ($this.val() === '') {
+          label.removeClass('active highlight');
+        } else {
+          label.addClass('active highlight');
+        }
+    } else if (e.type === 'blur') {
+    	if( $this.val() === '' ) {
+    		label.removeClass('active highlight'); 
+			} else {
+		    label.removeClass('highlight');   
+			}   
+    } else if (e.type === 'focus') {
+      
+      if( $this.val() === '' ) {
+    		label.removeClass('highlight'); 
+			} 
+      else if( $this.val() !== '' ) {
+		    label.addClass('highlight');
+			}
+    }
+
+});
+
+$('.tab a').on('click', function (e) {
+  
+  e.preventDefault();
+  
+  $(this).parent().addClass('active');
+  $(this).parent().siblings().removeClass('active');
+  
+  target = $(this).attr('href');
+
+  $('.tab-content > div').not(target).hide();
+  
+  $(target).fadeIn(800);
+  
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+
+<body>
+<div id="form">
+  <div class="container">
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+      <div id="userform">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li class="active"><a href="#signup"  role="tab" data-toggle="tab">Sign up</a></li>
+          <!--<li><a href="../"  role="tab" data-toggle="tab">Log in</a></li> -->
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade active in" id="signup">
+            <h2 class="text-uppercase text-center"> Sign Up To ABcollegE</h2>
+            <form action="register" method="POST">
+				{% csrf_token %}
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label>First Name<span class="req">*</span> </label>
+                    <input type="text" class="form-control" name="first_name" id="first_name" required data-validation-required-message="Please enter your name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="form-group">
+                    <label> Last Name<span class="req">*</span> </label>
+                    <input type="text" class="form-control" name="last_name" id="last_name" required data-validation-required-message="Please enter your name." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label> Your Email<span class="req">*</span> </label>
+                <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+			  <div class="form-group">
+               <label > Username <span class="req">*</span> </label> 
+                <input type="text" class="form-control" name="username" id="username"   required data-validation-required-message="Please enter your Username." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Your Phone<span class="req">*</span> </label>
+                <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label> Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" name="password1" id="password" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+			  <div class="form-group">
+                <label> Conform Password<span class="req">*</span> </label>
+                <input type="password" class="form-control" name="password2" id="password" required data-validation-required-message="Please enter your password" autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="mrgn-30-top">
+                <button type="submit" class="btn btn-larger btn-block"/>
+                Sign up
+                </button>
+              </div>
+            </form>
+			<div>
+				{% for message in messages %}
+				<h4>
+					<center> {{message}} </center> 
+
+				</h4>
+				{% endfor %}
+			</div>
+          </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container --> 
+</div>
+
+</body>
+<!-- partial -->
+ 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Internship Form-->
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Apply for an Internship</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> Middlename: </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+Course :  
+</label>   
+  
+<select>  
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other  
+  
+</div>  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+Current Address :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Intern.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTS-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="v-vA-compatible" content="ie=edge">
+        <title>Post an internship</title>
+    </head>
+    <body bgcolor="cyan">
+        <!--Using For Loop-->
+        {% for dest in dests %}
+        <div class="destination item">
+            <div class="destination_image">
+                <img src="{{baseUrl}}/{{dest.img}}" alt="">
+                <div class = "spec_offer text-center"><a href='#'>Special Offer</a></div>
+            </div>
+            <div class="destination_content">
+                <div class="destination_title"><a href="internship.html">{{dest.name}}</a></div>
+                <div class ="destination_subtitle"><p>{{dest.desc}}</p></div>
+            </div>
+            <div class="destination_price">From{{dest.price}}</div>
+        </div>
+        {%endfor%}
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Home page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<link rel="icon" href="{% static 'images/abcollegelogo.png' %}" sizes="20x20"> type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Home</title>
+</head>
+<body>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-style: 'poppins', sans-serif;
+			
+		}
+
+	/*@keyframes animate{
+			0%{
+              background-color: #e91e63;
+			}
+			50%{
+                background-color: #4B0082;
+			}
+			100%{
+				background-color: #880f0f;
+			}
+			
+			80%{
+				background-color: #FF7F50;
+			}
+			animation: animate 8s ease infinite;
+			
+
+		}*/
+		
+		
+        header nav{
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 100000;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: antiquewhite;
+			box-shadow: 5px 5px 19px  rgba(0, 0, 0, 0.562);
+			
+			
+		
+			
+		}
+		header nav  .logo img{
+			height: 12vh;
+			margin-top: 5px;
+			margin-left: 3rem;
+		}
+	
+			
+		
+		header nav .navbar{
+			list-style: none;
+			text-decoration: none;
+			
+
+			
+		}
+		header nav .navbar ul{
+			display: flex;
+			list-style: none;
+			text-decoration: none;
+			padding-right: 5rem;
+			
+			
+		}
+		header nav .navbar ul a{
+			color:black;
+			
+			text-decoration: none;
+		}
+		header nav .navbar ul li{
+			padding: 0 30px;
+			
+			font-family: sans-serif;
+			font-size: 25px;
+			
+			font-weight: normal;
+			text-transform: capitalize;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		header nav .navbar ul  :hover{
+			color: rgb(0, 132, 255);
+			
+			
+			
+			
+		}
+		header nav .navbar ul  .but a{
+			text-decoration: none;
+			padding: 6px 10px;
+			font-size: 25px;
+			padding-right: 10px;
+			
+			background-color: white;
+			color: black;
+			border-radius: 20px;
+
+		}
+		header nav .navbar ul  .but a:hover{
+			color: white;
+			background-color: black;
+		}
+
+
+
+		/*------------------------------------------------------------------------------------------------- #50dbdbb9*/
+	
+		#botnav{
+			
+			text-align: center;
+			align-items: center;
+			height: 90vh;
+			padding-top: 110px;
+			color: black;
+			
+			
+			
+			
+		
+		}
+		#botnav h1{
+			font-size: 80px;
+			padding-bottom: 15px;
+		}
+		#botnav .one p{
+			font-size: 55px;
+			padding-bottom: 25px;
+		}
+		#botnav .two p{
+			font-size: 36px;
+			padding-bottom: 19px;
+		}
+		#botnav .button{
+			padding-top: 20px;
+			padding-bottom:20px;
+			text-align: center;
+		}
+		#botnav .button a{
+		
+			text-decoration: none;
+			font-size: 30px;
+			text-align: center;
+			border-radius: 30px;
+			color: white;
+			padding: 6px 15px;
+			background-color: black;
+			padding-bottom: 20px;
+			cursor: pointer;
+			
+			box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.562);
+		
+		}
+		#botnav .button a:hover{
+			color: black;
+			background-color: antiquewhite;
+		}
+    #botnav .three p{
+		font-size: 23px;
+		padding-top: 25px;
+			padding-bottom: 35px;
+			
+		}
+		
+
+		/*-------------------------------------------------------------------------------------------------*/
+		#collegesearch{
+			height: 80vh;
+			width: 100%;
+			
+			background: #50dbdbb9;
+			padding-left: 20px;
+			padding-top: 40px;
+			padding-right: 20px;
+			text-transform: capitalize;
+			display: flex;
+			justify-content: space-between;
+			box-sizing: border-box;
+			padding: 10px;
+			
+		}
+		
+		#collegesearch .aa h1{
+			padding-top: 60px;
+			color: black;
+			font-size: 40px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+			
+		}
+		#collegesearch .aa .searchbut{
+			padding-left: 40px;
+		}
+	 
+		#collegesearch .aa .searchbut input{
+			text-transform: capitalize;
+			font-size: 25px;
+						text-align: center;
+			padding: 6px 6px;
+			border-radius: 30px;
+		}
+	
+		.slider-box{
+         width: 45%;
+         height: 40vh;
+    		
+				position: relative;
+		box-shadow: 5px 5px 19px  rgba(0, 0, 0, 0.562);
+         
+         overflow: hidden;
+     }
+     #slider{
+        
+         display: inline-flex;
+         transition: 0.4s;
+          
+     }
+	 #slider img{
+	
+         width: 100%;
+     }
+      .indigiter{
+         position: absolute;
+         left: 50%;
+         bottom: 0px;
+         transform: translateX(-50%);
+
+     }
+	  .indigiter span{
+         display: inline-block;
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         background: #50dbdbb9;
+         cursor: pointer;
+     }
+    .active{
+         background: antiquewhite !important ;
+     }
+/*-------------------------------------------------------------------------------------------------*/
+ 
+
+/*
+#mid{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	box-shadow: 5px 5px 19px  rgba(0, 0, 0, 0.562);
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+}*/
+#mid{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+	padding-bottom: 4rem;
+}
+#mid .events{
+	position: absolute;
+     left: 10%;
+	
+	
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .events img{
+	height: 25vh;
+	padding-bottom: 0;
+}
+#mid .events h2{
+	font-size: 41px;
+}
+#mid .events h3{
+	font-size: 30px;
+
+}
+#mid .events p{
+	font-size: 26px;
+	padding-bottom: 4px;
+}
+#mid .scholorship{
+	position: absolute;
+     left: 40%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .scholorship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#mid .scholorship h2{
+	font-size: 41px;
+}
+#mid .scholorship h3{
+	font-size: 30px;
+}
+#mid .internship{
+	position: absolute;
+     left: 68%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .internship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#mid .internship h2{
+	font-size: 41px;
+}
+#mid .internship  h3{
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+		/*-------------------------------------------------------------------------------------------------*/
+		
+		.footer{
+			background-color: #24262b;
+			margin-top: 40px;
+			padding: 70px 0;
+			text-transform: capitalize;
+
+		}
+		.container{
+			max-width: 1170px;
+			
+			margin: auto;
+
+		}
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		ul{
+			list-style: none;
+		}
+		.footer-col{
+			width: 25%;
+			padding: 0 15px;
+		}
+		.footer-col h4{
+        font-size: 18px;
+		color: #ffffff;
+		text-transform: capitalize;
+		margin-bottom: 35px;
+		font-weight: 500;
+		position: relative;
+
+		}
+		.footer-col h4 ::before{
+        content:'' ;
+		position: absolute;
+		left: 0;
+		bottom: -10px;
+		background-color: #e91e63;
+		height: 2px;
+		box-sizing: border-box;
+		width: 50px;
+
+		}
+		.footer-col ul li a{
+			margin-bottom:10px ;
+			font-weight: 16px;
+			text-transform: capitalize;
+			font-weight: 300;
+			color:white ;
+			text-decoration: none;
+			display: block;
+		}
+
+
+
+
+
+        .social {
+            padding: 15px;
+            margin: 5px;
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+          }
+
+/* Social Media Links*/
+.social a{
+  font-size: 30px;
+  color: #F4FFFE;
+  border-style: groove;
+  border-color: grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  display: inline-block
+}
+
+
+/* Social Media Links on mouse hover */
+.social a:hover {
+    background-color: rgb(69, 130, 172);
+    color: white;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+
+<!-------------------------------------------------------------------------------------------------->
+       
+	<header>
+		<nav>
+			<div class="logo">
+				<!--<img src="logo-removebg-preview.png">-->
+				<img src="{% static 'images/abcollegelogo (2).png' %}" height="120" width="95">
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="../about">About Us</a></li>
+
+					{% if user.is_authenticated %}
+					<li><a href="../internship">Scholarship</a></li>
+					<li><a href="../lms">LMS</a></li>
+					<li><a href="../notes">NOTES</a></li>
+					<li><a href="/intern">Internsip</a></li>
+					<li>Hello, {{ user.first_name }}</li>
+					<div class="but">
+						<a href="../logout" > Logout </a>
+					</div>
+					{% else %}
+					<div class="but">
+						<a href="../index" > Signup/login </a>
+					</div>
+					{% endif %}
+				</ul>
+               
+			</div>
+		</nav>
+	</header>
+
+<!-------------------------------------------------------------------------------------------------->
+
+
+
+
+
+	<section id="botnav">
+
+		<h1>
+			University & College Finder
+		</h1>
+		<div class="one">
+			<p>
+				Find universities that fit you better than a tailored suit!
+			</p>
+		</div>
+		<p class="two">
+		<div class="two">
+			<p>Find ideal universities to do your...
+		</p>
+		</div>
+		<div class="button">
+			<a href="../intern">Bachlors</a>
+			<a href="#">Masters</a>
+		</div>
+		<div class="three">
+			<p >
+				Delivering results with our unique algorithm
+			</p>
+			
+		</div>
+	</section>
+
+
+<!------------------------------------------------------------------------------------------------------->
+
+  <section id="collegesearch">
+	  
+	    <div class="aa">
+	  <h1>search your college here</h1>
+	  <form action="search" id="search" method="GET">
+	  <div class="searchbut" >
+		  <input type="text" name ="search" placeholder="type for search">
+		  <button>search</button>
+		  
+	  </div>
+	  
+	  </form>
+	</div>
+	</div>
+
+	  <div class="slider-box">
+        <div id="slider">
+            <img src="{% static 'images/galgotias.jpg' %}">
+            <img src="{% static 'images/sharda.jpeg' %}">
+            <img src="{% static 'images/G.L.-BAJAJ-.jpg' %}">
+            <img src="{% static 'images/gnoit.jpeg' %}">
+            <img src="{% static 'images/iimt.jpg' %}">
+            <img src="{% static 'images/its.png' %}">
+        </div>
+        <div class="indigiter">
+            <span id="but1" class="active"></span>
+            <span id="but2"></span>
+            <span id="but3"></span>
+            <span id="but4"></span>
+            <span id="but5"></span>
+            <span id="but6"></span>
+        </div>
+	</div>
+    <script>
+       
+        var slide = document.getElementById("slider")
+        var but1 = document.getElementById("but1")
+        var but2 = document.getElementById("but2")
+        var but3 = document.getElementById("but3")
+        var but4 = document.getElementById("but4")
+        var but5 = document.getElementById("but5")
+        var but6 = document.getElementById("but6")
+        
+        but1.onclick=function(){
+            slide.style.transform="translateX(0px)";
+            but1.classList.add("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+        }
+        but2.onclick=function(){
+            slide.style.transform="translateX(-100%)";
+            but2.classList.add("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+        }
+        but3.onclick=function(){
+            slide.style.transform="translateX(-200%)";
+            but3.classList.add("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+        }
+        but4.onclick=function(){
+            slide.style.transform="translateX(-300%)";
+            but4.classList.add("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+        }
+        but5.onclick=function(){
+            slide.style.transform="translateX(-400%)";
+            but5.classList.add("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+        }
+        but6.onclick=function(){
+            slide.style.transform="translateX(-500%)";
+            but6.classList.add("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+        }
+    </script>
+    
+	
+
+  </section>
+
+</section>
+
+
+<section id="mid">
+	<div class="awsome">
+	<h1>Awsome Features</h1>
+	<p>keep yourslf one step ahead</p>
+</div>
+<div class="events">
+	<a href="#"><img src="event-removebg-preview.png"></a>
+	<h2>events</h2>
+	<h3>participate in events</h3>
+	<p>nearby your college</p>
+</div>
+<div class="scholorship">
+	<a href="#"><img src="scholarshipppp-removebg-preview.png"></a>
+	<h2>scholarship</h2>
+	<h3>apply for scholarship</h3>
+</div>
+<div class="internship">
+	<a href="#"><img src="scholarshipppp-removebg-preview.png"></a>
+	<h2>internship</h2>
+	<h3>apply for internshipship</h3>
+</div>
+
+</section>
+	<!--<section id="mid">
+		<div class="awsome">
+		<h1>Awsome Features</h1>
+		<p>keep yourslf one step ahead</p>
+	</div>
+	<div class="awslogo">
+		
+	</div>
+
+
+	</section> -->
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>top universities</h4>
+					<ul>
+						<li><a href="../galgotias">Galgotias University</a></li>
+						<li><a href="#">sharda University</a></li>
+						<li><a href="#">amity University</a></li>
+						<li><a href="#">g.l.bajaj</a></li>
+					</ul>
+				</div>
+				
+				
+				</section>
+				<div class="footer-col">
+					<h4>top courses</h4>
+					<ul>
+						<li><a href="#">MCA</a></li>
+						<li><a href="#">MBA</a></li>
+						<li><a href="#">B.TECH</a></li>
+						<li><a href="#">LLB</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>get help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Mail us</a></li>
+						<li><a href="#">chat us</a></li>
+						
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Top Exams</h4>
+					<ul>
+						<li><a href="#">NEET</a></li>
+						<li><a href="#">GATE</a></li>
+						<li><a href="#">JEE-MAIN</a></li>
+						<li><a href="#">CAT</a></li>
+						<li><a href="#">NIMCET</a></li>
+						
+					</ul>
+				</div><center>
+                <div class="card">
+                    <h3> Follow Us</h3>
+					
+                 <!-- Social Links Container -->
+				 <div class="row social" align="right">
+                    <a target = "blank" href='https://twitter.com/codingCommander' ><i class="fab fa-twitter" ></i></a>
+                    <a target = "blank" href='https://www.facebook.com/graduatesonline/'><i class='fab fa-facebook' height="50" width="50"></i></a>
+                    <a target = "blank" href='https://www.instagram.com/codingcommanders'><i class='fab fa-instagram' height="50" width="50"></i></a>
+                    <a target="blank" href="https://social.tchncs.de/@codingcommanders"><i class="fab fa-whatsapp" height="50" width="50"></i></a>
+                    <a target="blank" href="mailto:official.abcollege@gmail.com"> <i class='fa-solid fa-envelope-open' height="50" width="50"></i></a>
+                </div>
+                  </div></center>
+				</div>
+			</div>
+			
+			<p><center><b>&copy; Copyright 2022.</b></center></p>
+	</footer>
+</html>
+
+<!-- <div class="row social" style="text-align:right;">
+</div>  --> 

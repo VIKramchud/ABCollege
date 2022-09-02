@@ -1,0 +1,782 @@
+<!--Home page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<link rel="icon" href="{% static 'images/abcollegelogo.png' %}" sizes="20x20"> type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Home</title>
+</head>
+<body>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-style: 'poppins', sans-serif;
+			
+		}
+
+	/*@keyframes animate{
+			0%{
+              background-color: #e91e63;
+			}
+			50%{
+                background-color: #4B0082;
+			}
+			100%{
+				background-color: #880f0f;
+			}
+			
+			80%{
+				background-color: #FF7F50;
+			}
+			animation: animate 8s ease infinite;
+			
+
+		}*/
+		
+		
+        header nav{
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 100000;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: antiquewhite;
+			box-shadow: 5px 5px 19px  rgba(0, 0, 0, 0.562);
+			
+			
+		
+			
+		}
+		header nav  .logo img{
+			height: 12vh;
+			margin-top: 5px;
+			margin-left: 3rem;
+		}
+	
+			
+		
+		header nav .navbar{
+			list-style: none;
+			text-decoration: none;
+			
+
+			
+		}
+		header nav .navbar ul{
+			display: flex;
+			list-style: none;
+			text-decoration: none;
+			padding-right: 5rem;
+			
+			
+		}
+		header nav .navbar ul a{
+			color:black;
+			
+			text-decoration: none;
+		}
+		header nav .navbar ul li{
+			padding: 0 30px;
+			
+			font-family: sans-serif;
+			font-size: 22px;
+			
+			font-weight: normal;
+			text-transform: capitalize;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		header nav .navbar ul  :hover{
+			color: rgb(0, 132, 255);
+			
+			
+			
+			
+		}
+		header nav .navbar ul  .but a{
+			text-decoration: none;
+			padding: 6px 10px;
+			font-size: 22px;
+			padding-right: 10px;
+			
+			background-color: white;
+			color: black;
+			border-radius: 20px;
+
+		}
+		header nav .navbar ul  .but a:hover{
+			color: white;
+			background-color: black;
+		}
+
+
+
+		/*------------------------------------------------------------------------------------------------- #50dbdbb9*/
+	
+		#botnav{
+			
+			text-align: center;
+			align-items: center;
+			height: 90vh;
+			padding-top: 110px;
+			color: black;
+			
+			
+			
+			
+		
+		}
+		#botnav h1{
+			font-size: 80px;
+			padding-bottom: 15px;
+		}
+		#botnav .one p{
+			font-size: 55px;
+			padding-bottom: 25px;
+		}
+		#botnav .two p{
+			font-size: 36px;
+			padding-bottom: 19px;
+		}
+		#botnav .button{
+			padding-top: 20px;
+			padding-bottom:20px;
+			text-align: center;
+		}
+		#botnav .button a{
+		
+			text-decoration: none;
+			font-size: 30px;
+			text-align: center;
+			border-radius: 30px;
+			color: white;
+			padding: 6px 15px;
+			background-color: black;
+			padding-bottom: 20px;
+			cursor: pointer;
+			
+			box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.562);
+		
+		}
+		#botnav .button a:hover{
+			color: black;
+			background-color: antiquewhite;
+		}
+    #botnav .three p{
+		font-size: 23px;
+		padding-top: 25px;
+			padding-bottom: 35px;
+			
+		}
+		
+
+		/*-------------------------------------------------------------------------------------------------*/
+		#collegesearch{
+			height: 80vh;
+			width: 100%;
+			
+			background: #50dbdbb9;
+			padding-left: 20px;
+			padding-top: 40px;
+			padding-right: 20px;
+			text-transform: capitalize;
+			display: flex;
+			justify-content: space-between;
+			box-sizing: border-box;
+			padding: 10px;
+			
+		}
+		
+		#collegesearch .aa h1{
+			padding-top: 60px;
+			color: black;
+			font-size: 40px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+			
+		}
+		#collegesearch .aa .searchbut{
+			padding-left: 40px;
+		}
+	 
+		#collegesearch .aa .searchbut input{
+			text-transform: capitalize;
+			font-size: 25px;
+						text-align: center;
+			padding: 6px 6px;
+			border-radius: 30px;
+			padding-right: 2rem;
+		}
+		#collegesearch button{
+			font-size: 32px;
+			color: rgba(0, 0, 0, 0.541);
+			background:radial-gradient(#fff,#ffd6d6);
+			border-radius: 20px;
+			padding: 6px,6px;
+		}
+	
+		.slider-box{
+         width: 45%;
+         height: 40vh;
+    		
+				position: relative;
+		box-shadow: 5px 5px 19px  rgba(0, 0, 0, 0.562);
+         
+         overflow: hidden;
+     }
+     #slider{
+        
+         display: inline-flex;
+         transition: 0.4s;
+          
+     }
+	 #slider img{
+	
+         width: 100%;
+     }
+      .indigiter{
+         position: absolute;
+         left: 50%;
+         bottom: 0px;
+         transform: translateX(-50%);
+
+     }
+	  .indigiter span{
+         display: inline-block;
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         background: #50dbdbb9;
+         cursor: pointer;
+     }
+    .active{
+         background: antiquewhite !important ;
+     }
+/*-------------------------------------------------------------------------------------------------*/
+ 
+
+/*
+#mid{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	box-shadow: 5px 5px 19px  rgba(0, 0, 0, 0.562);
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+}*/
+#mid{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+	padding-bottom: 4rem;
+}
+#mid .events{
+	position: absolute;
+     left: 10%;
+	
+	
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .events img{
+	height: 25vh;
+	padding-bottom: 0;
+}
+#mid .events h2{
+	font-size: 41px;
+}
+#mid .events h3{
+	font-size: 30px;
+
+}
+#mid .events p{
+	font-size: 26px;
+	padding-bottom: 4px;
+}
+#mid .scholorship{
+	position: absolute;
+     left: 40%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .scholorship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#mid .scholorship h2{
+	font-size: 41px;
+}
+#mid .scholorship h3{
+	font-size: 30px;
+}
+#mid .internship{
+	position: absolute;
+     left: 68%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .internship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#mid .internship h2{
+	font-size: 41px;
+}
+#mid .internship  h3{
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+		/*-------------------------------------------------------------------------------------------------*/
+		
+		.footer{
+			background-color: #24262b;
+			margin-top: 40px;
+			padding: 70px 0;
+			text-transform: capitalize;
+
+		}
+		.container{
+			max-width: 1170px;
+			
+			margin: auto;
+
+		}
+		.row{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		ul{
+			list-style: none;
+		}
+		.footer-col{
+			width: 25%;
+			padding: 0 15px;
+		}
+		.footer-col h4{
+        font-size: 18px;
+		color: #ffffff;
+		text-transform: capitalize;
+		margin-bottom: 35px;
+		font-weight: 500;
+		position: relative;
+
+		}
+		.footer-col h4 ::before{
+        content:'' ;
+		position: absolute;
+		left: 0;
+		bottom: -10px;
+		background-color: #e91e63;
+		height: 2px;
+		box-sizing: border-box;
+		width: 50px;
+
+		}
+		.footer-col ul li a{
+			margin-bottom:10px ;
+			font-weight: 16px;
+			text-transform: capitalize;
+			font-weight: 300;
+			color:white ;
+			text-decoration: none;
+			display: block;
+		}
+
+
+
+
+
+        .social {
+            padding: 15px;
+            margin: 5px;
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+          }
+
+/* Social Media Links*/
+.social a{
+  font-size: 30px;
+  color: #F4FFFE;
+  border-style: groove;
+  border-color: grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  display: inline-block
+}
+
+
+/* Social Media Links on mouse hover */
+.social a:hover {
+    background-color: rgb(69, 130, 172);
+    color: white;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</style>
+
+
+<!-------------------------------------------------------------------------------------------------->
+       
+	<header>
+		<nav>
+			<div class="logo">
+				<!--<img src="logo-removebg-preview.png">-->
+				<img src="{% static 'images/abcollegelogo (2).png' %}" height="120" width="95">
+			</div>
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="../about">About</a></li>
+
+					{% if user.is_authenticated %}
+					
+					<li><a href="../lms">LMS</a></li>
+					<li><a href="../notes">Notes</a></li>
+					
+					<li>Hello, {{ user.first_name }}</li>
+					<div class="but">
+						<a href="../logout" > Logout </a>
+					</div>
+					{% else %}
+					<div class="but">
+						<a href="../index" > Login </a>
+					</div>
+					{% endif %}
+				</ul>
+               
+			</div>
+		</nav>
+	</header>
+
+<!-------------------------------------------------------------------------------------------------->
+
+
+
+
+
+	<section id="botnav">
+
+		<h1>
+			University & College Finder
+		</h1>
+		<div class="one">
+			<p>
+				Find universities that fit you better than a tailored suit!
+			</p>
+		</div>
+		<p class="two">
+		<div class="two">
+			<p>Find ideal universities to do your...
+		</p>
+		</div>
+		<div class="button">
+			<a href="../intern">Bachlors</a>
+			<a href="#">Masters</a>
+		</div>
+		<div class="three">
+			<p >
+				Delivering results with our unique algorithm
+			</p>
+			
+		</div>
+	</section>
+
+
+<!------------------------------------------------------------------------------------------------------->
+
+  <section id="collegesearch">
+	  
+	    <div class="aa">
+	  <h1>search your college here</h1>
+	  <form action="search" id="search" method="GET">
+	  <div class="searchbut" >
+		  <input type="text" name ="search" placeholder="type for search">
+		  <button>search</button>
+		  
+	  </div>
+	  
+	  </form>
+	</div>
+	</div>
+
+	  <div class="slider-box">
+        <div id="slider">
+            <img src="{% static 'images/galimage.jpg' %}">
+            <img src="{% static 'images/sharda.jpeg' %}">
+            <img src="{% static 'images/G.L.-BAJAJ-.jpg' %}">
+            <img src="{% static 'images/gnoit.jpeg' %}">
+            <img src="{% static 'images/iimt.jpg' %}">
+            <img src="{% static 'images/its.png' %}">
+        </div>
+        <div class="indigiter">
+            <span id="but1" class="active"></span>
+            <span id="but2"></span>
+            <span id="but3"></span>
+            <span id="but4"></span>
+            <span id="but5"></span>
+            <span id="but6"></span>
+        </div>
+	</div>
+    <script>
+       
+        var slide = document.getElementById("slider")
+        var but1 = document.getElementById("but1")
+        var but2 = document.getElementById("but2")
+        var but3 = document.getElementById("but3")
+        var but4 = document.getElementById("but4")
+        var but5 = document.getElementById("but5")
+        var but6 = document.getElementById("but6")
+        
+        but1.onclick=function(){
+            slide.style.transform="translateX(0px)";
+            but1.classList.add("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+        }
+        but2.onclick=function(){
+            slide.style.transform="translateX(-100%)";
+            but2.classList.add("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+        }
+        but3.onclick=function(){
+            slide.style.transform="translateX(-200%)";
+            but3.classList.add("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+        }
+        but4.onclick=function(){
+            slide.style.transform="translateX(-300%)";
+            but4.classList.add("active")
+            but5.classList.remove("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+        }
+        but5.onclick=function(){
+            slide.style.transform="translateX(-400%)";
+            but5.classList.add("active")
+            but6.classList.remove("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+        }
+        but6.onclick=function(){
+            slide.style.transform="translateX(-500%)";
+            but6.classList.add("active")
+            but1.classList.remove("active");
+            but2.classList.remove("active")
+            but3.classList.remove("active")
+            but4.classList.remove("active")
+            but5.classList.remove("active")
+        }
+    </script>
+    
+	
+
+  </section>
+
+</section>
+
+
+<section id="mid">
+	<div class="awsome">
+	<h1>Awsome Features</h1>
+	<p>keep yourself one step ahead</p>
+</div>
+{% if user.is_authenticated %}
+<div class="events">
+	<a href="../events"><img src="{% static 'images/event-removebg-preview.png' %}"></a>
+	<h2>events</h2>
+	<h3>participate in events</h3>
+	<p>nearby your college</p>
+</div>
+<div class="scholorship">
+	<a href="../internship"><img src="{% static 'images/scholarshipppp-removebg-preview.png' %}"></a>
+	<h2>scholarship</h2>
+	<h3>apply for scholarship</h3>
+</div>
+<div class="internship">
+	<a href="../intern"><img src="{% static 'images/scholarshipppp-removebg-preview.png' %}"></a>
+	<h2>internship</h2>
+	<h3>apply for internshipship</h3>
+</div>
+
+</section>
+{%else%}
+<div class="awsome">
+</div>
+<div class="events">
+	<a href=""><img src="{% static 'images/event-removebg-preview.png' %}"></a>
+	<h2>events</h2>
+	<h3>participate in events</h3>
+	<p>nearby your college</p>
+</div>
+<div class="scholorship">
+	<a href=""><img src="{% static 'images/scholarshipppp-removebg-preview.png' %}"></a>
+	<h2>scholarship</h2>
+	<h3>apply for scholarship</h3>
+</div>
+<div class="internship">
+	<a href=""><img src="{% static 'images/scholarshipppp-removebg-preview.png' %}"></a>
+	<h2>internship</h2>
+	<h3>apply for internshipship</h3>
+</div>
+
+</section>
+{% endif %}
+	<!--<section id="mid">
+		<div class="awsome">
+		<h1>Awsome Features</h1>
+		<p>keep yourslf one step ahead</p>
+	</div>
+	<div class="awslogo">
+		
+	</div>
+
+
+	</section> -->
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------------------------->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>top universities</h4>
+					<ul>
+						<li><a href="../galgotias">Galgotias University</a></li>
+						<li><a href="#">sharda University</a></li>
+						<li><a href="#">amity University</a></li>
+						<li><a href="#">g.l.bajaj</a></li>
+					</ul>
+				</div>
+				
+				
+				</section>
+				<div class="footer-col">
+					<h4>top courses</h4>
+					<ul>
+						<li><a href="#">MCA</a></li>
+						<li><a href="#">MBA</a></li>
+						<li><a href="#">B.TECH</a></li>
+						<li><a href="#">LLB</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>get help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Mail us</a></li>
+						<li><a href="#">chat us</a></li>
+						
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Top Exams</h4>
+					<ul>
+						<li><a href="#">NEET</a></li>
+						<li><a href="#">GATE</a></li>
+						<li><a href="#">JEE-MAIN</a></li>
+						<li><a href="#">CAT</a></li>
+						<li><a href="#">NIMCET</a></li>
+						
+					</ul>
+				</div><center>
+                <div class="card">
+                    <h3> Follow Us</h3>
+					
+                 <!-- Social Links Container -->
+				 <div class="row social" align="right">
+                    <a target = "blank" href='https://twitter.com/codingCommander' ><i class="fab fa-twitter" ></i></a>
+                    <a target = "blank" href='https://www.facebook.com/graduatesonline/'><i class='fab fa-facebook' height="50" width="50"></i></a>
+                    <a target = "blank" href='https://www.instagram.com/codingcommanders'><i class='fab fa-instagram' height="50" width="50"></i></a>
+                    <a target="blank" href="https://social.tchncs.de/@codingcommanders"><i class="fab fa-whatsapp" height="50" width="50"></i></a>
+                    <a target="blank" href="mailto:official.abcollege@gmail.com"> <i class='fa-solid fa-envelope-open' height="50" width="50"></i></a>
+                </div>
+                  </div></center>
+				</div>
+			</div>
+			
+			<p><center><b>&copy; Copyright 2022.</b></center></p>
+	</footer>
+</html>
+
+<!-- <div class="row social" style="text-align:right;">
+</div>  --> 

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scholarship</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .top{
+           
+           
+           color: white;
+            text-transform: capitalize;
+            background-image: url({% static 'images/top-img.jpg' %});
+           background-position: center;
+           height: 30vh;
+           background-size: cover;
+           backdrop-filter: blur(2px);
+        }
+        .top h1{
+            font-size: 60px;
+            font-weight: 800;
+           text-align: center;
+           padding-top: 3.9rem;
+           padding-bottom: 3px;
+           
+        }
+        .top p{
+            font-size: 32px;
+            text-align: center;
+            
+
+        }
+       .tagline{
+           text-align: center;
+           padding-top: 5rem;
+       }
+       .tagline h1{
+        font-size: 60px;
+            font-weight: 800;
+           
+           padding-bottom: 3px; 
+       }
+       .tagline p{
+        font-size: 25px;
+            font-weight: 100;
+            padding-bottom: 8px;
+            
+       }
+       .tagline hr{
+           width: 60%;
+           margin: auto;
+           
+        }
+        #mid{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	display: flex;
+	
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+	padding-bottom: 4rem;
+}
+     
+#mid{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+	
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+	padding-bottom: 4rem;
+}
+#mid .events{
+	position: absolute;
+     left: 10%;
+	
+	
+	
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .events img{
+	height: 25vh;
+	padding-bottom: 0;
+}
+#mid .events h2{
+	font-size: 41px;
+}
+#mid .events h3{
+	font-size: 30px;
+
+}
+#mid .events p{
+	font-size: 26px;
+	padding-bottom: 4px;
+}
+#mid .scholorship{
+	position: absolute;
+     left: 40%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .scholorship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#mid .scholorship h2{
+	font-size: 41px;
+}
+#mid .scholorship h3{
+	font-size: 30px;
+}
+#mid .internship{
+	position: absolute;
+     left: 68%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#mid .internship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#mid .internship h2{
+	font-size: 41px;
+}
+#mid .internship  h3{
+	font-size: 30px;
+}
+#midd{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+    padding-top: 5rem;
+	
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+	padding-bottom: 4rem;
+}
+#midd .events{
+	position: absolute;
+     left: 10%;
+	
+	
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#midd .events img{
+	height: 25vh;
+	padding-bottom: 0;
+}
+#midd .events h2{
+	font-size: 41px;
+}
+#midd .events h3{
+	font-size: 30px;
+
+}
+#midd .events p{
+	font-size: 26px;
+	padding-bottom: 4px;
+}
+#midd .scholorship{
+	position: absolute;
+     left: 40%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#midd .scholorship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#midd .scholorship h2{
+	font-size: 41px;
+}
+#midd .scholorship h3{
+	font-size: 30px;
+}
+#midd .internship{
+	position: absolute;
+     left: 68%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#midd .internship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#midd .internship h2{
+	font-size: 41px;
+}
+#midd .internship  h3{
+	font-size: 30px;
+}
+
+
+#middd{
+	width: 100%;
+	height: 70vh;
+	text-align: center;
+    padding-top: center ;
+	
+}
+.awsome h1{
+   font-size: 60px;
+}
+.awsome p{
+	font-size: 45px;
+	padding-bottom: 4rem;
+}
+#middd .events{
+	position: absolute;
+     left: 10%;
+	
+	
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#middd .events img{
+	height: 25vh;
+	padding-bottom: 0;
+}
+#middd .events h2{
+	font-size: 41px;
+}
+#middd .events h3{
+	font-size: 30px;
+
+}
+#middd .events p{
+	font-size: 26px;
+	padding-bottom: 4px;
+}
+#middd .scholorship{
+	position: absolute;
+     left: 40%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#middd .scholorship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#middd .scholorship h2{
+	font-size: 41px;
+}
+#middd .scholorship h3{
+	font-size: 30px;
+}
+#middd .internship{
+	position: absolute;
+     left: 68%;
+	
+	padding: 0 12px;
+	text-align: center;
+	text-transform: capitalize;
+	box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+	
+}
+#middd .internship img{
+	height: 30vh;
+	padding-bottom: 0;
+}
+#middd .internship h2{
+	font-size: 41px;
+}
+#middd .internship  h3{
+	font-size: 30px;
+}
+
+
+
+
+    </style>
+    <header>
+        <div class="top">
+           
+                
+                <h1>scholarship of your college</h1>
+                <p>its all about creating scholarship</p>
+            
+        </div>
+    </header>
+    <div class="tagline">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, eveniet.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia ullam repellat nostrum?</p>
+        <hr>
+    </div>
+   
+	<section id="mid">
+<div class="awsome">
+    <h1>Awsome Features</h1>
+    <p>keep yourslf one step ahead</p>
+</div>
+	</section>
+
+
+	
+{% for dest in data %}
+<section id="mid">
+	
+<div class="events">
+    <a href="{{dest.link}}"><img src="{{dest.img.url}}"></a>
+	
+	<h5>{{dest.name}}</h5>
+	<h6>{{dest.company}}</h6>
+	<p>{{dest.link}}</p>
+	<h6>{{dest.time}} Month</h6>
+	<h6>{{dest.venue}}</h6>
+	
+</div>
+
+
+</section>
+{% endfor %}
+
+		
+
+    </body>
+
+</html>

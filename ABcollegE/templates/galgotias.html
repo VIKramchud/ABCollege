@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galgotias university</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+
+       }
+      
+       
+       nav {
+           
+           display: flex;
+           justify-content: space-around;
+           background: gray;
+           align-items: center;
+           
+       }
+       nav img{
+        height: 12vh;
+       }
+       nav p{
+           font-size: 35px;
+           padding: 3px 5px;
+           background:black;
+           color: white;
+           cursor: pointer;
+           border-radius: 30px
+       }
+       .body .img{
+      
+
+
+       }
+       .body .container{
+        text-align: center;
+           padding-top: 3rem;
+           text-transform: capitalize;
+           color: black;
+       }
+       .body .container h1{
+           font-size: 3rem;
+           padding-bottom: 5px;
+           font-weight: 4000;
+       }
+       .body .container h2{
+           font-size: 5rem;
+           padding-bottom: 5px;
+           font-weight: 4000;
+       }
+       .body .container p{
+           font-size: 1.8rem;
+           padding-bottom: 2rem;
+           font-weight: 400;
+       }
+       .middlepart{
+           
+       text-align: center;
+       padding-bottom: 60px;
+       }
+       .middlepart .img{
+           display: flex;
+           justify-content: space-around;
+       }
+       .middlepart img{
+           
+           width: 600px;
+           height: 300px;
+       }
+       .star{
+          position: absolute;
+          left: 20%;
+         
+       }
+       .checked {
+        color: orange;
+       }
+      
+       .lowerpart{
+           text-align: center;
+         padding-top: 30px;
+           
+       }
+       .lowerpart h2{
+        font-size: 32px;
+        text-transform: capitalize;
+        padding: 5px;
+
+
+       }
+       .lowerpart p{
+           padding: 5px 60px;
+       }
+       .detail{
+           
+        align-items: center;
+           text-transform: capitalize;
+           display: flex;
+       }
+       .detail h1{
+           font-size: 45px;
+           
+       }
+   </style>
+<header>
+    <nav>
+       <img src="{% static 'images/abcollegelogo.png' %}">
+       <h3> ABcollegE </h3>
+        <p><a href="../">Home</a></p>
+    </nav>
+</header>
+<div class="body">
+   
+    <div class="container">
+        <h1>Welcome to</h1>
+        <h2>galgotias university</h2>
+        <p>one of the top university in greater noida</p>
+    </div>
+</div>
+<div class="middlepart">
+    <div class="img">
+    <img src="{% static 'images/galgotias.jpg' %}">
+    <img src="{% static 'images/G.L.-BAJAJ-.jpg' %}">
+</div>
+    <div class="star">
+    <h2> Rating</h2>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+
+</div>
+
+
+</div>
+<div class="lowerpart">
+    <h2>
+        why galgotias university
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam eum amet beatae eius nesciunt. Voluptatum mollitia nesciunt corrupti dolorem. Autem impedit quaerat maxime error, iste odio mollitia, ut molestias dicta aliquam consequatur hic aliquid ipsa eligendi tempora vero commodi provident quos quis dignissimos optio. Nisi consectetur nulla quasi mollitia, hic ex dolorem. Odit velit, ut quod odio tempore similique sed, eius delectus minus, distinctio quae iste? Deleniti ea est tenetur. Temporibus voluptatum incidunt eius. Consequuntur consectetur autem nisi aliquid, fugiat rerum ex exercitationem, unde culpa dicta non ratione nam! Sint nesciunt, eos numquam cumque voluptas voluptatem quos. Vero, debitis sunt.</p>
+
+</div>
+<div class="detail">
+    <h1>for more detail visit official</h1>
+    <a href="#"><p>website</p></a>
+</div>
+</body>
+</html>

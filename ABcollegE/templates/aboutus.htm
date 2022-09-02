@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Roboto+Slab:wght@200;500&display=swap" rel="stylesheet">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header .img{
+    background-image: url("{% static 'images/about-us.jpg' %}")
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 60vh;
+        background-size: contain;
+    padding-bottom: 3px;
+}
+nav{
+    
+}
+nav .nav ul{
+
+    display: flex;
+    color: black;
+    background-color: antiquewhite;
+    font-size: 22px;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 0 12rem;
+    
+}
+nav .nav ul img{
+    height: 9vh;
+}
+nav .nav ul  a {
+    text-decoration: none;
+    list-style: none;
+ 
+}
+nav .nav ul  a li{
+    text-decoration: none;
+    font-family: sans-serif;
+    list-style: none;
+    color: black;
+    
+    padding-top: 13px;
+    text-transform: capitalize;
+    
+}
+nav .nav ul   :hover{
+    color: rgb(0, 132, 255);
+}
+.work{
+    margin: 4rem;
+   
+    text-align: center;
+}
+.work h1{
+ font-size: 45px;
+ padding: 2rem 0;
+}
+.work p{
+    font-size: 25px;
+}
+.member{
+    background: #2F4F4F;
+     
+      margin: 4rem ;
+      font-family: 'Lobster', cursive;
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: capitalize;
+      color: #fff;
+    }
+    .container{
+        
+     margin: 4rem;
+      display: flex;
+      color: black;
+      text-align: center;
+      padding-top: 3rem;
+      background:#50dbdbb9;
+      font-size: 2rem;
+    }
+    .img img{
+     height: 22vh;
+     padding: 5px 6rem;
+      border-radius: 50%;
+      border: 2px solid#fff;
+      background: #fff;
+
+    }
+    .img  h2 {
+     padding: 1px 6rem;
+     font-size: 2rem;
+    }
+    .img p{
+      padding: 0 6rem;
+      font-size: 1.2rem;
+      padding-bottom: 5rem;
+      font-family: 'Lobster', cursive;
+      font-family: 'Pacifico', cursive;
+    }
+    .gagan{
+        background: #2F4F4F;
+        padding-top: 3rem;
+        margin: 4rem;
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+
+    }
+    .gagan img{
+      justify-content: center;
+      height: 32vh;
+      text-align: center;
+    }
+    .gagan p{
+      padding: 0 32rem;
+      padding-bottom: 1rem;
+      font-family: 'Lobster', cursive;
+      font-family: 'Pacifico', cursive;
+    }
+    .work{
+    text-transform: capitalize;
+    text-align: center;
+    
+    
+}
+.mission{
+    text-transform: capitalize;
+    text-align: center;
+    
+    
+}
+.mission h1{
+    font-size: 55px;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    
+}
+.mission p{
+font-size: 23px;
+padding: 12px 5rem;
+}
+footer{
+			background-color: #24262b;
+			margin-top: 40px;
+			padding: 70px 0;
+			text-transform: capitalize;
+
+		}
+</style>
+    <header>
+        <div class="img"></div>
+    </header>
+    <nav>
+        <div class="nav">
+            <ul>
+                <img src="{% static 'images/abcollegelogo (2).png'%}">
+                <a href="http://127.0.0.1:5500/shopityclone.html" ><li>home</li></a>
+                
+            </ul>
+            <hr>
+        </div>
+    </nav>
+<div class="work">
+    <h1>how do we work</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt assumenda animi fugit quisquam porro quo? Distinctio sed temporibus sunt dolores adipisci inventore, eum vero porro alias autem animi eius, magni illo maiores, molestiae voluptate repellat! At soluta quis sed, aut quisquam fuga doloremque ipsam error minima, perferendis distinctio ipsum maxime?</p>
+</div>
+
+<div class="team">
+    <div class="member">
+      <h1>team member 
+    </div>
+    <div class="container">
+    <div class="img">
+      <img src="vikrampic.png">
+      <h2>Vikram choudhary</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae in id laudantium corrupti labore sint eum! Deleniti, vel. Molestiae, eum.</p> 
+    </div>
+    <div class="img">
+      <img src="{% static 'images/logo-removebg-preview.png' %}">
+    <h2>Vikram choudhary</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae in id laudantium corrupti labore sint eum! Deleniti, vel. Molestiae, eum.</p> 
+  </div>
+</div>
+<div class="container">
+  <div class="img">
+    <img src="{% static 'images/logo-removebg-preview.png' %}">
+    <h2>Vikram choudhary</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae in id laudantium corrupti labore sint eum! Deleniti, vel. Molestiae, eum.</p> 
+  </div>
+  <div class="img">
+    <img src="{% static 'images/pushpam.jpg' %}">
+  <h2>Vikram choudhary</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae in id laudantium corrupti labore sint eum! Deleniti, vel. Molestiae, eum.</p> 
+</div>
+</div>
+<div class="gagan">
+<div class="img">
+  <img src="{% static 'images/logo-removebg-preview.png' %}">
+  <h2>Vikram choudhary</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae in id laudantium corrupti labore sint eum! Deleniti, vel. Molestiae, eum.</p> 
+</div>
+</div>
+</div>
+<div class="mission">
+       
+    <h1>our mission</h1><br><h2>--------*--------</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi numquam quasi minima obcaecati error adipisci molestiae explicabo deleniti magni mollitia vitae id quaerat suscipit fuga omnis non quam, aspernatur rerum neque. Est ad dolorum, totam soluta neque quod sunt quibusdam? Delectus perspiciatis repudiandae magni. Consequatur recusandae quibusdam, unde, eum commodi aliquam reprehenderit dolorum error iure ducimus qui cumque eligendi autem iusto, rem delectus rerum dolore laborum culpa eaque! Explicabo eveniet id adipisci corporis iure facilis fuga velit maxime alias magni, minus veniam eius ea aliquam ipsum recusandae reiciendis numquam labore atque praesentium libero maiores. Facere suscipit cum dolor nisi adipisci?</p>
+</div>
+<footer>
+  <div class="contact">
+    <ul>
+      
+        <a href="#"><img src=""></a>
+     
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
